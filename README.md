@@ -16,27 +16,36 @@
 <br />
 
 ### Pre Installation Setup required
-+ mongod
-+ mongo
-+ use admin
-+ db.createUser(
-+  {
-+     user: "superdbadmin",
-+     pwd: "super321",
-+     roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
-+   }
-+ )
-+ restart mongod with --auth
+``` text
+ mongod
+ mongo
+ use admin
+ db.createUser(
+  {
+     user: "superdbadmin",
+     pwd: "super321",
+     roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+   }
+ )
+ restart mongod with --auth
 
-+ mongo --port 27017 -u "superdbdmin" -p "super321" --authenticationDatabase "admin"
-+ use trudesk
-+ db.createUser(
-+   {
-+     user: "testUser",
-+     pwd: "xyz123",
-+     roles: [ { role: "readWrite", db: "trudesk" }]             
-+   }
-+ )
+ mongo --port 27017 -u "superdbdmin" -p "super321" --authenticationDatabase "admin"
+ use trudesk
+ db.createUser(
+   {
+     user: "testUser",
+     pwd: "xyz123",
+     roles: [ { role: "readWrite", db: "trudesk" }]             
+   }
+ )
+```
+Start the trudesk service after the above steps and use the  below details during installation to connect to mongo
+``` text
+     user: "testUser",
+     pwd: "xyz123",
+     db: "trudesk"
+ ```    
+
 
 ### Open Source Help Desk - Simply Organized.
 Quickly resolve issues & task with an easy to use solution. Built with one goal in mind, to keep work loads organized and simple. Get started today at <a href="http://trudesk.io">Trudesk.io</a>
