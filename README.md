@@ -16,9 +16,9 @@
 <br />
 
 ### Pre Installation Setup required
-mongod
-mongo
-use admin
++ mongod
++ mongo
++ use admin
 db.createUser(
   {
     user: "superdbadmin",
