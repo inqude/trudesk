@@ -29,7 +29,7 @@
  )
  restart mongod with --auth
 
- mongo --port 27017 -u "superdbdmin" -p "super321" --authenticationDatabase "admin"
+ mongo --port 27017 -u "superdbadmin" -p "super321" --authenticationDatabase "admin"
  use trudesk
  db.createUser(
    {
