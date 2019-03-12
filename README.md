@@ -45,7 +45,15 @@ Start the trudesk service after the above steps and use the  below details durin
      pwd: "xyz123",
      db: "trudesk"
  ```    
-
+Start the Installation as mentioned below
+``` text
+$ git clone https://www.github.com/polonel/trudesk
+$ cd trudesk
+$ npm install -g yarn
+$ yarn
+$ yarn run build
+$ node runner
+```
 
 ### Open Source Help Desk - Simply Organized.
 Quickly resolve issues & task with an easy to use solution. Built with one goal in mind, to keep work loads organized and simple. Get started today at <a href="http://trudesk.io">Trudesk.io</a>
